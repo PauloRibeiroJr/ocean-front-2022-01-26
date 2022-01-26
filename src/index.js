@@ -1,7 +1,13 @@
 import React from "react";
 import reactDOM from "react-dom";
 
+function HelloWorld(){
+  return(
+    <p>Hello World funciton</p>
+  )
+}
+
 reactDOM.render(
-  <p>oies!</p>
+  <HelloWorld/>,
   document.getElementById('root')
 )
