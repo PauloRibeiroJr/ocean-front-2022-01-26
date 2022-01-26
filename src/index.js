@@ -12,7 +12,7 @@ function HelloJampa(){
 
 reactDOM.render(
   <div>
-  <HelloWorld/>
+  <HelloWorld nome={"Paulo"} sobrenome={"Ribeio Jr"} idade={48}/>
   <HelloJampa/>
   </div>,
   document.getElementById('root')
