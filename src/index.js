@@ -1,13 +1,19 @@
 import React from "react";
 import reactDOM from "react-dom";
+import HelloWorld from "./components/HelloWorld";
 
-function HelloWorld(){
+
+
+function HelloJampa(){
   return(
-    <p>Hello World funciton</p>
+    <p>Não sou de Jampa</p>
   )
 }
 
 reactDOM.render(
-  <HelloWorld/>,
+  <div>
+  <HelloWorld/>
+  <HelloJampa/>
+  </div>,
   document.getElementById('root')
 )
