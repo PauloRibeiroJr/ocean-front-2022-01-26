@@ -1,7 +1,9 @@
-function HelloWorld({nome, sobrenome, idade}){
-    return(
-      <p>Hello World funciton by {nome} {sobrenome} com idade {idade}</p>
-    )
-  }
+function HelloWorld({ nome, sobrenome, idade }) {
+    return (
+        <p>
+            Hello World funciton by {nome} {sobrenome} com idade {idade}
+        </p>
+    );
+}
 
-  export default HelloWorld;
+export default HelloWorld;
