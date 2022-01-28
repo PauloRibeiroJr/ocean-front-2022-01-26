@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const client = axios.create({
+    baseURL: 'https://ocean-bcknd-cloud-18-01-2022.herokuapp.com/herois',
+});
+
 function Marvel() {
     const [itens, setItens] = useState([]);
     useEffect(() => {
