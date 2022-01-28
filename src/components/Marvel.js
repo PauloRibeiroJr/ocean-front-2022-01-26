@@ -1,15 +1,19 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const client = axios.create({
-    baseURL: 'https://ocean-bcknd-cloud-18-01-2022.herokuapp.com/herois',
-});
+const url = 'https://ocean-bcknd-cloud-18-01-2022.herokuapp.com/herois';
+
+const backend = axios.create({ baseURL: url });
 
 function Marvel() {
     const [itens, setItens] = useState([]);
     useEffect(() => {
-        axios
-            .get('https://ocean-bcknd-cloud-18-01-2022.herokuapp.com/herois')
+        backend
+            .get(url, {
+                headers: {
+                    Authorization: 'Basic 123456',
+                },
+            })
             .then(response => {
                 setItens(response.data);
             });

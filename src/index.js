@@ -17,7 +17,6 @@ reactDOM.render(
             src="https://picsum.photos/400/300?random=2"
             className="img-fluid"
         />
-
         <HelloWorld nome={'Paulo'} sobrenome={'Ribeio Jr'} idade={48} />
         <HelloJampa />
         <Marvel />
